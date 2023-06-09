@@ -16,4 +16,4 @@ def test_convert_fahrenheit_to_celsius():
     assert f2c(32) == 0
     assert f2c(122) == pytest.approx(50)
     with pytest.raises(AssertionError):
-        f2c('a')
+        f2c(-100000)
