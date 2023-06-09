@@ -10,7 +10,7 @@ def test_subtract():
     assert subtract(2, 3) == -1
     
 def test_multiply():
-    assert subtract(2, 3) == 6
+    assert multiply(2, 3) == 6
 
 def test_convert_fahrenheit_to_celsius():
     assert f2c(32) == 0
