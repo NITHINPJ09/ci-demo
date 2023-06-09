@@ -2,17 +2,17 @@ from functions import add, subtract, multiply
 from functions import convert_fahrenheit_to_celsius as f2c
 import pytest
 
-def test_add():
+def testaadd():
     assert add(2, 3) == 5
     assert add('space', 'ship') == 'spaceship'
 
-def test_subtract():
+def testssubtract():
     assert subtract(2, 3) == -1
     
-def test_multiply():
+def testmmultiply():
     assert multiply(2, 3) == 6
 
-def test_convert_fahrenheit_to_celsius():
+def testcconvert_fahrenheit_to_celsius():
     assert f2c(32) == 0
     assert f2c(122) == pytest.approx(50)
     #with pytest.raises(AssertionError):
