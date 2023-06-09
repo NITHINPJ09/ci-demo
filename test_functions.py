@@ -14,7 +14,7 @@ def test_multiply():
     
 def test_divide():
     assert divide(8, 2) == 4
-    with pytest.raises(AssertionError):
+    with pytest.raises(ZeroDivisionError):
         divide(5, 0)
 
 def test_convert_fahrenheit_to_celsius():
