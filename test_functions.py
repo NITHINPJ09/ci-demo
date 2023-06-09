@@ -1,4 +1,4 @@
-from functions import add, subtract, multiply
+from functions import add, subtract, multiply, divide
 from functions import convert_fahrenheit_to_celsius as f2c
 import pytest
 
@@ -11,6 +11,10 @@ def test_subtract():
     
 def test_multiply():
     assert multiply(2, 3) == 6
+    
+def test_divide():
+    assert multiply(8, 2) == 4
+    assert multiply(5, 0) == 4
 
 def test_convert_fahrenheit_to_celsius():
     assert f2c(32) == 0
