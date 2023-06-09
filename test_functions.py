@@ -15,7 +15,7 @@ def test_multiply():
 def test_divide():
     assert divide(8, 2) == 4
     with pytest.raises(ZeroDivisionError):
-        divide(6, 2)
+        divide(6, 0)
 
 def test_convert_fahrenheit_to_celsius():
     assert f2c(32) == 0
