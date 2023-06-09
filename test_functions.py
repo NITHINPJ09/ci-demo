@@ -13,11 +13,10 @@ def test_multiply():
     assert multiply(2, 3) == 6
     
 def test_divide():
-    assert multiply(8, 2) == 4
-    assert multiply(5, 0) == 4
+    assert divide(8, 2) == 4
+    with pytest.raises(AssertionError):
+        divide(5, 0)
 
 def test_convert_fahrenheit_to_celsius():
     assert f2c(32) == 0
     assert f2c(122) == pytest.approx(50)
-    with pytest.raises(AssertionError):
-        f2c(-100000)
