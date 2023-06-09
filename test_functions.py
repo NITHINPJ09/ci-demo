@@ -13,7 +13,7 @@ def test_subtract():
 
 # uncomment the following test in step 11
 def test_convert_fahrenheit_to_celsius():
-    assert convert_fahrenheit_to_celsius(32) == 0
-    assert convert_fahrenheit_to_celsius(122) == pytest.approx(50)
+    assert f2c(32) == 0
+    assert f2c(122) == pytest.approx(50)
     with pytest.raises(AssertionError):
-        convert_fahrenheit_to_celsius(-600)
+        f2c(-600)
