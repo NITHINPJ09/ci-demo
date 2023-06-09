@@ -6,7 +6,7 @@ def ptest_add():
     assert add(2, 3) == 5
     assert add('space', 'ship') == 'spaceship'
 
-def ptest_subtract():
+def test_subtract():
     assert subtract(2, 3) == -1
     
 def test_multiply():
